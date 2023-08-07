@@ -1,0 +1,20 @@
+class Silly{
+    b: Stringx <- "Hola mundo";
+    copy() : SELF_TYPE { self };
+    a: Int;
+};
+
+class Sally inherits Silly {};
+
+class Main {
+    x : Silly <- (new Silly).copy();
+    x2: Sally;
+    ax: Int <- 7;
+    bx: Int <- 8;
+    main() : Silly { x };
+    otromain(var1: Int, var2: Int): Int {
+        {
+        var1 + var2
+        }
+    };
+};

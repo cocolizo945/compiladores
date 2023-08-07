@@ -1,0 +1,41 @@
+class Main {
+    io_enter: IO;
+    num: Int;
+    
+    fibonnacci(n: Int) : Int {
+       if n = 0
+       then {
+            io_enter.out_int(0);
+            0;
+       }            
+       else
+            if n = 1
+            then {
+                    io_enter.out_int(1);
+                    1;
+               }
+            else
+                if n = 2
+                then {
+                    io_enter.out_int(1);
+                    1;
+                }
+                else {
+                    io_enter.out_int(fibonnacci(n - 1) + fibonnacci(n-2));
+                    fibonnacci(n - 1) + fibonnacci(n-2);
+                }
+                fi
+            fi
+       fi
+    
+    } ;
+
+
+    main() : Int {
+        {
+            num <- (io_enter.in_int());
+            fibonnacci(num);    
+            
+        }
+    };
+};

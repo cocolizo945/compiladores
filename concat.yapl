@@ -1,0 +1,15 @@
+class Main {
+    x: String;
+    io_enter: IO;
+
+    main() : IO {
+        {
+            x <- (io_enter.in_string());
+            x <- (x.concat("Hola"));
+            x <- (x.concat("Hola2"));
+            x <- (x.concat("Hola3"));
+            io_enter.out_string(x);
+
+        }
+    };
+};

@@ -1,0 +1,15 @@
+class Main {
+x: Int <- 1;
+x2: Int;
+x3: Int;
+x4: String <- "Hello";
+main():Int {
+        {
+        x = 5 + 6 + 7 + 8 - 9;
+        x2 = 13 * 13;
+        x3 = 3 + 1;
+
+
+        }
+    };
+};
